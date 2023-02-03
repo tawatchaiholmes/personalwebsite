@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
-import { images } from "../constants"
-import "./Navbar.css"
+import { images } from "../constants";
+import "./Navbar.css";
 
 const Navbar = () => {
   // Toggle Menu
