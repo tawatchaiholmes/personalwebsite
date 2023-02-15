@@ -18,7 +18,7 @@
 .nav__logo,
 .nav__toggle {
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
 }
 
 .nav__list {
@@ -32,7 +32,7 @@
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     transition: .3s;
 }
 
@@ -45,7 +45,7 @@
 /* Active Link */
 .active-link,
 .nav__link:hover {
-    color: var(--title-color-dark);
+    color: #E5E5CB;
 }
 
 /* Breakpoint */
