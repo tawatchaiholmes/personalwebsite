@@ -1,20 +1,30 @@
 import React from 'react'
+import { Typewriter, useTypewriter, Cursor  } from 'react-simple-typewriter'
 
 const Data = () => {
   return (
     <div className="home__data">
         <h1 className="home__title">
-            Andy Holmes
-        
+            Hi, I'm <span> Andy </span>
         </h1>
-        <h3 className="home_subtitle"> 
-            Full-Stack Developer 
+        <h3 className="home__subtitle"> 
+          a <span> 
+            <Typewriter
+            words={['Full-Stack Developer', 'Front-end Developer', 'Freelancer']}
+            loop
+            cursor
+            cursorStyle='|'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+            </span>
         </h3>
-        <p className="home__description">A creative and quick learning Computer Science major with a mix of Software Engineering, Mathematics, 
+        {/* <p className="home__description">A creative and quick learning Computer Science major with a mix of Software Engineering, Mathematics, 
         Statistics, and Data Science knowledge. Seeking to use the skills that I have learned from my studies,
         explore new ideas, and expand my knowledge further. Enjoy taking on Challenging tasks, learning new
         things, and being a problem solver by heart.
-        </p>
+        </p> */}
         <a href="#contact" className="button button--flex">
             Contact Me
             <svg
