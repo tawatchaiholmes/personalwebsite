@@ -15,9 +15,18 @@
     column-gap: 1rem;
 }
 
-.nav__logo,
+.nav__logo {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    font-size: 28px;
+}
 .nav__toggle {
     color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.nav__logo span {
+    color: #B99B6B;
     font-weight: var(--font-semi-bold);
 }
 
@@ -45,7 +54,7 @@
 /* Active Link */
 .active-link,
 .nav__link:hover {
-    color: #E5E5CB;
+    color: #B99B6B;
 }
 
 /* Breakpoint */

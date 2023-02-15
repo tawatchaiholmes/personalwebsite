@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import { images } from "../constants";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          Holmes
+          Hol<span>mes</span>
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">

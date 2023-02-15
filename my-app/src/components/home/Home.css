@@ -55,7 +55,7 @@
 }
 
 .home__title span {
-    color: #D5CEA3
+    color: #B99B6B
 }
 
 .home__subtitle {
@@ -63,7 +63,7 @@
     font-size: 30px;
     font-weight: bold;
     margin-bottom: var(--mb-1);
-    color: #D5CEA3;
+    color: #B99B6B;
 }
 
 .home__subtitle span{
