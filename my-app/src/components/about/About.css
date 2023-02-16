@@ -24,14 +24,22 @@
         width: 220px;
     }
 
+    .about__description {
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .about__data {
+        text-align: center;
+    }
+
 }
 
-@media screen and (max-width: 768px){
-
-}
 
 @media screen and (max-width: 576px){
-
+    .about__description {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 350px) {
