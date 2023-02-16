@@ -41,7 +41,7 @@
 @media screen and (max-width: 992px) {
     :root {
         --big-font-size: 2.75rem;
-        --h1-font-size: 1.5rem;
+        --h1-font-size: 2rem;
         --h2-font-size: 1.25rem;
         --h3-font-size: 1rem;
         --normal-font-size: 0.938rem;
@@ -98,11 +98,11 @@ img {
 }
 
 .section {
-    padding: 6rem 0 2rem;
+    padding: 10rem 0 6rem;
 }
 
 .section__title {
-    font-size: var(--h1-font-size);
+    font-size: 40px;
     color: var(--title-color);
 }
 

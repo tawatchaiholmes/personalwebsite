@@ -74,7 +74,7 @@
 
 .home__scroll {
     margin-left: 9.25rem;
-    animation: jumpInfinite 1.5s infinite;
+    /* animation: jumpInfinite 1.5s infinite; */
 }
 
 @keyframes jumpInfinite {
