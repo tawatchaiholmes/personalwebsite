@@ -4,15 +4,22 @@
     column-gap: 4rem;
 }
 
-.about__img{
-    width: 350px;
+.about__img {
+    width: 500px;
     border-radius: 1.5rem;
     justify-self: center;
 }
-.about__description{
+.about__description {
     padding: 0 4rem 0 0;
     margin-bottom: var(--mb-2-5);
 }
+
+.about__title {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 992px){
     .about__container {

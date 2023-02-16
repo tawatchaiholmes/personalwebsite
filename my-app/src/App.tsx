@@ -11,6 +11,7 @@ const App = () => {
           <Navbar />
           <main className="main">
             <Home />
+            <div className="spacer layer1"></div>
             <About />
           </main>
         </>

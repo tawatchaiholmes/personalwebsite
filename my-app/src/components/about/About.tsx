@@ -5,8 +5,8 @@ import Me from "../../assets/me2.jpg";
 
 const About = () => {
   return (
-    <section className="about section" id="about">
-        <h2 className="section__title">About Me</h2>
+    <section className="about__section " id="about">
+        <h2 className="about__title">About Me</h2>
         <span className="section__subtitle">My Introduction</span>
 
         <div className="about__container container grid">

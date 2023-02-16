@@ -14,7 +14,7 @@ const Navbar = () => {
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
-            <a href="#home" className="nav__link active-link">
+            <a href="#home" className="nav__link">
               <i className="uil uil-estate nav__icon"></i> Home
             </a>
 

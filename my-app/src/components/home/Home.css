@@ -1,3 +1,27 @@
+.wave {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 500px;
+}
+
+.wave .shape-fill {
+    fill: #2C3639;
+}
+
+.backgroundcolour{
+    background-color: #DCD7C9;
+}
+
 .home__container {
     row-gap: 7rem;
 }
@@ -47,7 +71,7 @@
 }
 
 .home__social-icon:hover {
-    color: #678983;
+    color: #3F4E4F;
 }
 
 .home__title {
@@ -56,15 +80,15 @@
 }
 
 .home__title span {
-    color: #678983
+    color: #3F4E4F
 }
 
 .home__subtitle {
     position: relative;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: var(--mb-1);
-    color: #678983;
+    color: #3F4E4F;
 }
 
 .home__subtitle span{
@@ -105,6 +129,9 @@
 /* Breakpoint */
 
 @media screen and (max-width: 992px){
+    body {
+        background-color: #DCD7C9;
+    }
     .home__content {
         grid-template-columns: 100px repeat(2, 1fr);
         column-gap: 1.25rem;
