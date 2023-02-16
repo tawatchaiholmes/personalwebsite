@@ -43,10 +43,11 @@
 .home__social-icon {
     font-size: 1.25rem;
     color: var(--title-color);
+    transition: .3s;
 }
 
 .home__social-icon:hover {
-    color: var(--title-color-dark);
+    color: #678983;
 }
 
 .home__title {
@@ -55,7 +56,7 @@
 }
 
 .home__title span {
-    color: #B99B6B
+    color: #678983
 }
 
 .home__subtitle {
@@ -63,7 +64,7 @@
     font-size: 30px;
     font-weight: bold;
     margin-bottom: var(--mb-1);
-    color: #B99B6B;
+    color: #678983;
 }
 
 .home__subtitle span{
@@ -73,11 +74,24 @@
 
 .home__scroll {
     margin-left: 9.25rem;
+    animation: jumpInfinite 1.5s infinite;
 }
+
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 10vh;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
 
 .home__scroll-name {
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: bold;
     margin-right: var(--mb-0-25);
     margin-left: 2px;
 }

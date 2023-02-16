@@ -130,19 +130,27 @@ img {
 
 .button {
     display: inline-block;
-    background-color: var(--title-color);
+    background-color: #678983;
     color: var(--container-color);
-    padding: 1.2rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);
+    transition: 0.3s;
+    border: 3px solid #678983;
 }
 
 .button:hover {
     background-color: var(--button-color-dark);
+    color: #678983;
+    border-color: #678983;
 }
 
 .button__icon {
     margin-left: var(--mb-0-5);
+}
+
+.button__icon:hover{
+    filter: invert(0%);
 }
 
 .button--flex {
@@ -178,7 +186,7 @@ img {
 
 }
 
-@media screen and (max-with: 350px) {
+@media screen and (max-width: 350px) {
     :root {
         --big-font-size: 2.25rem;
     }
