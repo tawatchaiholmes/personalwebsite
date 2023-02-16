@@ -13,6 +13,8 @@ const App = () => {
             <Home />
             <div className="spacer layer1"></div>
             <About />
+            <div className="spacer layer2"></div>
+            <div className="spacer layer2 flip"></div>
           </main>
         </>
       );

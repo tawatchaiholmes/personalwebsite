@@ -102,7 +102,7 @@ img {
 }
 
 .about__section {
-    padding: 10rem 0 6rem;
+    padding: 4rem 0 6rem;
     background-color: #2C3639;
 }
 
@@ -188,6 +188,14 @@ img {
 
 .layer1 {
     background-image: url(../src/assets/layered-waves-haikei.svg);
+}
+
+.layer2 {
+    background-image: url(../src/assets/layered-waves-haikei1.svg);
+}
+
+.flip {
+    transform: rotate(180deg);
 }
 
 
