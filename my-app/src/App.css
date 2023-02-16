@@ -141,17 +141,24 @@ img {
 
 .button:hover {
     background-color: var(--button-color-dark);
+    font-weight: bold;
     color: #678983;
     border-color: #678983;
 }
 
 .button__icon {
     margin-left: var(--mb-0-5);
+    transition: 0.3s;
 }
 
-.button__icon:hover{
-    filter: invert(0%);
+.button:hover .button__icon{
+    fill: #678983 !important;
 }
+
+.button__icon {
+    fill: white;
+  }
+
 
 .button--flex {
     display: inline-flex;
@@ -167,7 +174,7 @@ img {
     }
 
     .button {
-        padding: 1rem 1.75rem;
+        padding: 0.5rem 1rem;
     }
 
     .button__icon {
@@ -179,6 +186,10 @@ img {
 @media screen and (max-width: 768px){
     .section {
         padding: 2rem 0 4rem;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
     }
 }
 
@@ -193,5 +204,9 @@ img {
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
     }
 }
