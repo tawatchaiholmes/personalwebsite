@@ -26,7 +26,7 @@
 }
 
 .nav__logo span {
-    color: #3F4E4F;
+    color: #AA8B56;
     font-weight: var(--font-semi-bold);
 }
 
@@ -54,7 +54,7 @@
 /* Active Link */
 .active-link,
 .nav__link:hover {
-    color: #3F4E4F;
+    color: #AA8B56;
 }
 
 /* Breakpoint */

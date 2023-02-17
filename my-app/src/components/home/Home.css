@@ -71,7 +71,7 @@
 }
 
 .home__social-icon:hover {
-    color: #3F4E4F;
+    color: #AA8B56;
 }
 
 .home__title {
@@ -98,31 +98,33 @@
 
 .home__scroll {
     margin-left: 9.25rem;
-    /* animation: jumpInfinite 1.5s infinite; */
 }
 
-@keyframes jumpInfinite {
+
+@keyframes fading {
     0% {
-      margin-top: 0;
+    color: rgb(150, 144, 144);
     }
     50% {
-      margin-top: 10vh;
+    color: #AA8B56;
     }
     100% {
-      margin-top: 0;
+    color: rgb(150, 144, 144);
     }
-  }
+}
 
 .home__scroll-name {
-    color: var(--title-color);
+    color: rgb(150, 144, 144);
     font-weight: bold;
     margin-right: var(--mb-0-25);
-    margin-left: 2px;
+    margin-left: 2px;   
+    animation: fading 2.5s ease-in-out infinite 1s; 
 }
 
 .home__scroll-arrow {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: rgb(150, 144, 144);
+    animation: fading 2.5s ease-in-out infinite 1s;
 }
 
 
@@ -132,6 +134,14 @@
     body {
         background-color: #DCD7C9;
     }
+
+    .wave svg {
+        height: 0;
+        position: absolute;
+         width: 0;
+    }
+
+
     .home__content {
         grid-template-columns: 100px repeat(2, 1fr);
         column-gap: 1.25rem;
