@@ -5,7 +5,6 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Skill from "components/skill/Skill";
 
-
 const App = () => {
     return (
         <>

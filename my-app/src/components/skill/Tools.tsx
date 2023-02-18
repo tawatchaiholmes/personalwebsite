@@ -1,9 +1,13 @@
-import React from "react"
-export {}
+import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Tools = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, [])
   return (
-    <div className="skills__content">
+    <div data-aos="fade-up" className="skills__content">
       <h3 className="skills__title">Tools</h3>
       <div className="skills__box">
         <div className="skills__group">

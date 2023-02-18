@@ -1,8 +1,13 @@
-import React from "react"
+import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Languages = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, [])
   return (
-    <div className="skills__content">
+    <div data-aos="fade-up" className="skills__content">
       <h3 className="skills__title">Programming Languages</h3>
       <div className="skills__box">
         <div className="skills__group">
