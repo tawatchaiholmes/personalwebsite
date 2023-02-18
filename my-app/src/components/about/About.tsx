@@ -5,6 +5,12 @@ import CV from "../../assets/Tawatchai-Holmes-CV.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+const options = {
+  max: 10,
+  perspective: 1000,
+  scale: 1.05,
+}
+
 
 
 const About = () => {
@@ -17,6 +23,7 @@ const About = () => {
         <span data-aos="zoom-in" className="section__subtitle">My Introduction</span>
 
         <div data-aos="zoom-in" className="about__container container grid">
+
             <img src={Me} alt="" className="about__img" />
             <div className="about__data">
 
