@@ -102,15 +102,16 @@ img {
 }
 
 .about__section {
-    padding: 4rem 0 6rem;
+    padding: 1rem 0 12rem;
     background-color: #2C3639;
 }
 
-/* .skill__section {
-
+.skills__section {
+    padding: 4rem 0 12rem;
+    background-color: #DCD7C9;
 }
 
-.contact__section {
+/* .contact__section {
 
 } */
 
@@ -194,10 +195,9 @@ img {
     background-image: url(../src/assets/layered-waves-haikei1.svg);
 }
 
-.flip {
-    transform: rotate(180deg);
+.layer3 {
+    background-image: url(../src/assets/layered-waves-haikei2.svg);
 }
-
 
 /* Breakpoint */
 
@@ -224,7 +224,7 @@ img {
 
     .home__section {
         padding: 2rem 0 4rem;
-        background-color: #DCD7C9
+        background-color: #DCD7C9;
     }
     
     .about__section {

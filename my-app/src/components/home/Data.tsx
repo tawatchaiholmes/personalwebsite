@@ -10,7 +10,7 @@ const Data = () => {
         <h3 className="home__subtitle"> 
           a <span> 
             <Typewriter
-            words={['Full-Stack Developer', 'Front-end Developer', 'Freelancer']}
+            words={['Full-Stack Developer', 'Front-end Developer', 'Software Engineer']}
             loop
             cursor
             cursorStyle='|'
