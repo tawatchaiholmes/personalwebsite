@@ -14,6 +14,8 @@ const options = {
 
 
 const About = () => {
+
+  console.log("loading About")
   React.useEffect(() => {
     Aos.init({ duration: 2000 });
   }, [])

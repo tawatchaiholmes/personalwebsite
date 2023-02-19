@@ -3,8 +3,9 @@ import "./Home.css";
 import Data from "./Data";
 import Social from './Social';
 import Scroll from './Scroll';
-
 const Home = () => {
+
+  console.log("loading Home")
   return (
     <section className="home__section" id="home">
       <div className="home__container container grid">
