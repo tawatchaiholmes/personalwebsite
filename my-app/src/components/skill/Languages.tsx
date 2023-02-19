@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 const Languages = () => {
   React.useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 3000 });
   }, [])
   return (
     <div data-aos="fade-up" className="skills__content">
@@ -19,8 +19,8 @@ const Languages = () => {
                 <span className="five">
                 </span>
               </span>
-                <h3 className="level">5/5</h3>
             </div>
+              <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -31,8 +31,8 @@ const Languages = () => {
                 <span className="four">
                 </span>
               </span>
-                <h3 className="level">4/5</h3>
             </div>
+                <h3 className="level">4/5</h3>
           </div>
 
           <div className="skills__data">
@@ -43,8 +43,8 @@ const Languages = () => {
                 <span className="four">
                 </span>
               </span>
-                <h3 className="level">4/5</h3>
             </div>
+                <h3 className="level">4/5</h3>
           </div>
 
           <div className="skills__data">
@@ -55,8 +55,8 @@ const Languages = () => {
                 <span className="four">
                 </span>
               </span>
-                <h3 className="level">4/5</h3>
             </div>
+                <h3 className="level">4/5</h3>
           </div>
 
           <div className="skills__data">
@@ -67,8 +67,8 @@ const Languages = () => {
                 <span className="four">
                 </span>
               </span>
-                <h3 className="level">4/5</h3>
             </div>
+                <h3 className="level">4/5</h3>
           </div>
 
           <div className="skills__data">
@@ -79,8 +79,8 @@ const Languages = () => {
                 <span className="three">
                 </span>
               </span>
-                <h3 className="level">3/5</h3>
             </div>
+                <h3 className="level">3/5</h3>
           </div>
 
           <div className="skills__data">
@@ -91,8 +91,8 @@ const Languages = () => {
                 <span className="three">
                 </span>
               </span>
-                <h3 className="level">3/5</h3>
             </div>
+                <h3 className="level">3/5</h3>
           </div>
 
           <div className="skills__data">
@@ -103,8 +103,8 @@ const Languages = () => {
                 <span className="two">
                 </span>
               </span>
-                <h3 className="level">2/5</h3>
             </div>
+                <h3 className="level">2/5</h3>
           </div>
 
 
@@ -116,20 +116,8 @@ const Languages = () => {
                 <span className="two">
                 </span>
               </span>
+            </div>
                 <h3 className="level">2/5</h3>
-            </div>
-          </div>
-          
-          <div className="skills__data">
-            <i className="bx bxs-badge-check"></i>
-            <div>
-              <h3 className="skills__name">PHP</h3>
-              <span className="bar">
-                <span className="one">
-                </span>
-              </span>
-                <h3 className="level">1/5</h3>
-            </div>
           </div>
 
           <div className="skills__data">
@@ -140,8 +128,8 @@ const Languages = () => {
                 <span className="one">
                 </span>
               </span>
-                <h3 className="level">1/5</h3>
             </div>
+                <h3 className="level">1/5</h3>
           </div>
 
         </div>

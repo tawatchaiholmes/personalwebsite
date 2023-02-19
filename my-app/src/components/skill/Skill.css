@@ -3,7 +3,7 @@
     display: block;
     height: 10px;
     width: 180px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid #A27B5C;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -14,31 +14,6 @@
     height: 10px;
     float: left;
     background: #2C3639;
-}
-
-.five {
-    width: 100%;
-    animation: five 3s;
-}
-
-.four {
-    width: 80%;
-    animation: four 3s;
-}
-
-.three {
-    width: 60%;
-    animation: three 3s;
-}
-
-.two {
-    width: 40%;
-    animation: two 3s;
-}
-
-.one {
-    width: 20%;
-    animation: one 3s;
 }
 
 @keyframes five {
@@ -100,7 +75,7 @@
 
 .skills__content {
     border: 5px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: 2rem 3.4rem;
     border-radius: 1.25rem;
     background-color: #DCD7C9;
 }
@@ -139,12 +114,16 @@
     color: #333333;
     font-size: 14px;
     line-height: 18px;
+    padding-bottom: 0.4rem;
 }
 
 .level {
     color: #333333;
     font-size: 14px;
     line-height: 18px;
+    display: flex;
+    position: relative;
+    top: 1.3rem;
 }
 
 @media screen and (max-width: 992px){
