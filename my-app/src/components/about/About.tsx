@@ -5,14 +5,6 @@ import CV from "../../assets/Tawatchai-Holmes-CV.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const options = {
-  max: 10,
-  perspective: 1000,
-  scale: 1.05,
-}
-
-
-
 const About = () => {
 
   console.log("loading About")

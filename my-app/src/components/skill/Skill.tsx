@@ -5,8 +5,6 @@ import Tools from "./Tools";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
-
 const Skill = () => {
 
   console.log("loading Skill")

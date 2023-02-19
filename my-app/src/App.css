@@ -97,10 +97,6 @@ img {
   height: auto !important;
 }
 
-#root {
-    transition: 0.5s;
-}
-
 .home__section {
   padding: 23rem 0 6rem;
   background-color: #dcd7c9;
