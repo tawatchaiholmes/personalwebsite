@@ -5,6 +5,17 @@ import CV from "../../assets/Tawatchai-Holmes-CV.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
+
+document.addEventListener('mousemove', function(x: MouseEvent){
+  const img = document.querySelector(".about__img") as HTMLElement;
+  const movingValue = img.getAttribute("data-value");
+  const mouseX = (x.clientX * parseInt(movingValue || "0")) / 250;
+  const mouseY = (x.clientY * parseInt(movingValue || "0")) / 250;
+  img.style.transform = `translateX(${mouseX}px) translateY(${mouseY}px)`;
+});
+
+
 const About = () => {
 
   console.log("loading About")
@@ -18,7 +29,7 @@ const About = () => {
 
         <div data-aos="zoom-in" className="about__container container grid">
 
-            <img src={Me} alt="" className="about__img" />
+            <img src={Me} alt="" className="about__img" data-value="-3"/>
             <div className="about__data">
 
                 <p className="about__description">A creative and quick learning Computer Science major with a mix of Software Engineering, Mathematics, 

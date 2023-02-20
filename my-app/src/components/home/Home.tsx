@@ -3,6 +3,15 @@ import "./Home.css";
 import Data from "./Data";
 import Social from './Social';
 import Scroll from './Scroll';
+
+document.addEventListener('mousemove', function(x: MouseEvent){
+  const img = document.querySelector(".home__img") as HTMLElement;
+  const movingValue = img.getAttribute("data-value");
+  const mouseX = (x.clientX * parseInt(movingValue || "0")) / 250;
+  const mouseY = (x.clientY * parseInt(movingValue || "0")) / 250;
+  img.style.transform = `translateX(${mouseX}px) translateY(${mouseY}px)`;
+});
+
 const Home = () => {
 
   console.log("loading Home")
@@ -11,7 +20,7 @@ const Home = () => {
       <div className="home__container container grid">
         <div className="home__content grid">
           <Social />
-          <div className="home__img"></div>
+          <div className="home__img" data-value="-5"></div>
           <Data />
         </div>
         <Scroll/>
