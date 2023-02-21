@@ -112,9 +112,10 @@ img {
   background-color: #dcd7c9;
 }
 
-/* .contact__section {
-
-} */
+.contact__section {
+  padding: 4rem 0 1rem;
+  background-color: #2c3639;
+}
 
 .section__title {
   font-size: 40px;
@@ -197,6 +198,10 @@ img {
 
 .layer3 {
   background-image: url(../src/assets/layered-waves-haikei2.svg);
+}
+
+.layer4 {
+  background-image: url(../src/assets/layered-waves-haikei3.svg);
 }
 
 /* .spinner {

@@ -1,10 +1,11 @@
-import React from "react"
-import "./App.css"
-import Navbar from "./components/header/Navbar"
-import Home from "./components/home/Home"
-import About from "./components/about/About"
-import Skill from "./components/skill/Skill"
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader"
+import React from "react";
+import "./App.css";
+import Navbar from "./components/header/Navbar";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Skill from "./components/skill/Skill";
+import Contact from "./components/contact/Contact";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const observer = new IntersectionObserver(
   (entries: IntersectionObserverEntry[]) => {
@@ -72,7 +73,7 @@ const App = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 4000)
+    }, 3000)
   }, [])
 
   return (
@@ -94,6 +95,8 @@ const App = () => {
             <div className="spacer layer2"></div>
             <Skill />
             <div className="spacer layer3"></div>
+            <Contact />
+            <div className="spacer layer4"></div>
           </main>
         </>
       )}
