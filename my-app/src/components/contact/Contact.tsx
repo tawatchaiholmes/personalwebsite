@@ -1,5 +1,5 @@
 import React from "react"
-import emailjs from "@emailjs/browser"
+import emailjs, { EmailJSResponseStatus } from "@emailjs/browser"
 import "./Contact.css"
 
 const Contact = () => {
@@ -11,14 +11,13 @@ const Contact = () => {
     emailjs.sendForm(
       "service_1qa0qvv",
       "template_8dpws9b",
-      form.current as HTMLFormElement,
+      form.current!,
       "_ACFvakmTdcJSFRWu"
     )
-    const target = e.target as typeof e.target & {
-        reset: () => void;
-      };
-      target.reset();
+    const target = e.target as HTMLFormElement;
+    target.reset();
   }
+
   return (
     <section className="contact__section" id="contact">
       <h2 className="contact__title"> Get in touch </h2>
