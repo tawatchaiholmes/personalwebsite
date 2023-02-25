@@ -54,9 +54,6 @@ const Contact = () => {
                   placeholder="Name"
                 />
               </div>
-            </form>
-
-            <form className="contact__form">
               <div className="contact__form-div">
                 <label className="contact__form-tag">Email</label>
                 <input
@@ -66,9 +63,6 @@ const Contact = () => {
                   placeholder="Email"
                 />
               </div>
-            </form>
-
-            <form className="contact__form">
               <div className="contact__form-div">
                 <label className="contact__form-tag">Company (optional)</label>
                 <input
@@ -78,9 +72,6 @@ const Contact = () => {
                   placeholder="Company"
                 />
               </div>
-            </form>
-
-            <form className="contact__form">
               <div className="contact__form-div contact__form-area">
                 <label className="contact__form-tag">Message</label>
                 <textarea
@@ -91,7 +82,7 @@ const Contact = () => {
                   placeholder="Message"
                 />
               </div>
-              <button className="button button--flex">
+              <button type="submit" value="Send" className="button button--flex" disabled>
                 Send Message
                 <svg
                   className="button__icon"
