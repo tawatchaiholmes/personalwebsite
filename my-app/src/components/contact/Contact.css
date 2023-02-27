@@ -3,6 +3,26 @@
   padding-bottom: 3rem;
 }
 
+.red {
+  color: #af1010;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+  visibility: none;
+}
+
+.error {
+  color: #af1010;
+  top: 65px;
+  position: relative;
+  left: 1rem;
+  font-size: 14px;
+  font-weight: 100;
+}
+
 .contact__info {
   display: grid;
   row-gap: 0.5rem;

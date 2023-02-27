@@ -14,8 +14,8 @@ const Contact = () => {
       form.current!,
       "_ACFvakmTdcJSFRWu"
     )
-    const target = e.target as HTMLFormElement;
-    target.reset();
+    const target = e.target as HTMLFormElement
+    target.reset()
   }
 
   return (
@@ -46,26 +46,39 @@ const Contact = () => {
           <div className="contact__content">
             <form ref={form} onSubmit={sendEmail} className="contact__form">
               <div className="contact__form-div">
-                <label className="contact__form-tag">Your name</label>
+                <label className="contact__form-tag">
+                  <span className="red">* </span>Your Name
+                </label>
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   className="contact__form-input"
                   placeholder="Name"
                 />
+              <p className="error hidden" id="nameError">
+                Name cannot contain numbers
+              </p>
               </div>
               <div className="contact__form-div">
-                <label className="contact__form-tag">Email</label>
+                <label className="contact__form-tag">
+                  <span className="red">* </span>Email
+                </label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   className="contact__form-input"
                   placeholder="Email"
                 />
+              <p className="error hidden" id="emailError">
+                Invalid Email Address
+              </p>
               </div>
               <div className="contact__form-div">
                 <label className="contact__form-tag">Company (optional)</label>
                 <input
+                  id="company"
                   type="text"
                   name="company"
                   className="contact__form-input"
@@ -73,8 +86,11 @@ const Contact = () => {
                 />
               </div>
               <div className="contact__form-div contact__form-area">
-                <label className="contact__form-tag">Message</label>
+                <label className="contact__form-tag">
+                  <span className="red">* </span>Message
+                </label>
                 <textarea
+                  id="message"
                   name="message"
                   cols={30}
                   rows={10}
@@ -82,7 +98,12 @@ const Contact = () => {
                   placeholder="Message"
                 />
               </div>
-              <button type="submit" value="Send" className="button button--flex" disabled>
+              <button
+                id="sendButton"
+                type="submit"
+                value="Send"
+                className="button button--flex disabled"
+              >
                 Send Message
                 <svg
                   className="button__icon"

@@ -47,14 +47,100 @@ window.onload = () => {
   let interval = setInterval(function () {
     const skills = document.querySelector(".skills__section")
     if (skills) {
-      console.log("skills found")
       observer.observe(skills)
-      clearInterval(interval)
     } else {
       console.log("skills not found")
     }
+    
+    let name = document.getElementById("name") as HTMLInputElement
+    let email = document.getElementById("email") as HTMLInputElement
+    let message = document.getElementById("message") as HTMLInputElement
+    let submitButton = document.getElementById("sendButton") as HTMLButtonElement
+    
+    let isName = false
+    let isEmail = false
+    let isMessage = false
+    
+    
+    if  (submitButton)  {
+      clearInterval(interval) 
+    } else {
+    }
+  
+    name.addEventListener("input", () => {
+      isName = checkName(name.value)
+      checkButton(submitButton, isName, isEmail, isMessage)
+    })
+
+    email.addEventListener("input", () => {
+      isEmail= checkEmail(email.value)
+      checkButton(submitButton, isName, isEmail, isMessage)
+    })
+
+    message.addEventListener("input", () => {
+      isMessage= checkMessage(message.value)
+      checkButton(submitButton, isName, isEmail, isMessage)
+    })
+
+    submitButton.addEventListener("click", () => {
+      submitButton.classList.add("disabled")
+    })
+
+
   }, 3000)
 }
+
+const checkButton = (submitButton: any, isName: boolean, isEmail: boolean, isMessage: boolean) => {
+
+  if (isName && isEmail && isMessage) {
+    submitButton.classList.remove("disabled")
+  } else {
+    submitButton.classList.add("disabled")
+  }
+
+}
+
+const checkName = (name: any) => {
+
+  let error = document.getElementById("nameError") as HTMLParagraphElement
+
+  if (name.length === 0) {
+    error.classList.add("hidden")
+    return false;
+  } else if ((name.match(/^[A-Za-z]+$/)) || (name.includes(" "))) {
+    error.classList.add("hidden")
+    return true;
+  } else {
+    error.classList.remove("hidden")
+    return false;
+  }
+}
+
+const checkEmail = (email: any) => {
+
+  let error = document.getElementById("emailError") as HTMLParagraphElement
+  const expression: RegExp = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+  
+  if (email.length === 0) {
+    error.classList.add("hidden")
+    return false;
+  } else if (expression.test(email)) {
+    error.classList.add("hidden")
+    return true; 
+  } else {
+    error.classList.remove("hidden")
+    return false;
+  }
+}
+
+const checkMessage = (message: any) => {
+  if (message.length === 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 
 const override: React.CSSProperties = {
   display: "block",

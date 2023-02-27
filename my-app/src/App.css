@@ -144,6 +144,15 @@ img {
   gap: 1.5rem;
 }
 
+.button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button.disabled:hover {
+  cursor: default;
+}
+
 .button {
   display: inline-block;
   background-color: #3f4e4f;

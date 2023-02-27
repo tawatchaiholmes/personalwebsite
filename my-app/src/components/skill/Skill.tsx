@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 
 const Skill = () => {
 
-  console.log("loading Skill")
 
   React.useEffect(() => {
     Aos.init({ duration: 2000 });

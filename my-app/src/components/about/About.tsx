@@ -8,17 +8,18 @@ import "aos/dist/aos.css";
 
 
 document.addEventListener('mousemove', function(x: MouseEvent){
-  const img = document.querySelector(".about__img") as HTMLElement;
-  const movingValue = img.getAttribute("data-value");
-  const mouseX = (x.clientX * parseInt(movingValue || "0")) / 250;
-  const mouseY = (x.clientY * parseInt(movingValue || "0")) / 250;
-  img.style.transform = `translateX(${mouseX}px) translateY(${mouseY}px)`;
+  const img = document.querySelector(".about__img") as HTMLImageElement;
+  if (img) {
+    const movingValue = img.getAttribute("data-value");
+    const mouseX = (x.clientX * parseInt(movingValue || "0")) / 250;
+    const mouseY = (x.clientY * parseInt(movingValue || "0")) / 250;
+    img.style.transform = `translateX(${mouseX}px) translateY(${mouseY}px)`;
+  }
 });
 
 
 const About = () => {
 
-  console.log("loading About")
   React.useEffect(() => {
     Aos.init({ duration: 2000 });
   }, [])

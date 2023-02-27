@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-
-  console.log("loading Nav")
   // Toggle Menu
   const [Toggle, showMenu] = useState(false)
 
