@@ -23,17 +23,43 @@
   font-weight: 100;
 }
 
+.contact__social-icon {
+  font-size: 2rem;
+  color: whitesmoke;
+  transition: .3s;
+}
+
+.contact__social-icon:hover {
+  color: #A27B5C;
+}
+
 .contact__info {
   display: grid;
   row-gap: 0.5rem;
   grid-template-columns: 600px;
-  padding-bottom: 2rem;
   padding-top: 1rem;
 }
 
-.contact__card {
+.email__card {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+
+.number__card {
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.contact__icon {
+  gap: 0.4rem;
+  display: flex;
+}
+
+.button__card {
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact__title {
@@ -47,6 +73,21 @@
   font-size: var(--small-font-size);
   font-weight: bold;
   color: white;
+}
+
+.click {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color:  #A27B5C;
+}
+
+.contact__card-number {
+  color: var(--text-color);
+  transition: 0.3s;
+}
+.contact__card-number:hover {
+  color:  #A27B5C;
+  cursor: pointer;
 }
 
 .contact__subtitle {
@@ -77,7 +118,13 @@
   border-radius: 0.75rem;
   padding: 1rem;
   z-index: 1;
+  transition: 0.3s;
 }
+
+.contact__form-input:focus {
+  border-color: #DCD7C9;
+}
+
 
 .contact__form-tag {
   position: absolute;
