@@ -1,3 +1,12 @@
 # Personal Website
+Portfolio website built in React
 
-WIP Portfolio Website using Typesript and CSS
+This was a website built to showcase my technical skills and web design skills.
+
+## Technologies Used
+- HTML/CSS
+- Typescript
+- Git
+- GitHub
+- React
+
