@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="contact__info">
             <div className="contact__card">
               <span className="contact__text">
-                I would love to chat! You can reach me via my personal email, or
+                I would love to chat! You can reach me via my personal email, WhatsApp or
                 fill out the form below!
               </span>
             </div>
