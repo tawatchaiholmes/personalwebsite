@@ -26,12 +26,32 @@
     
 }
 
+@keyframes four_five {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+    
+}
+
 @keyframes four {
     0% {
         width: 0%;
     }
     100% {
         width: 80%;
+    }
+    
+}
+
+@keyframes three_five {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
     }
     
 }
@@ -46,12 +66,32 @@
     
 }
 
+@keyframes two_five {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+    
+}
+
 @keyframes two {
     0% {
         width: 0%;
     }
     100% {
         width: 40%;
+    }
+    
+}
+
+@keyframes one_five {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
     }
     
 }

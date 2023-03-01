@@ -28,15 +28,27 @@ function fillBar(x: HTMLElement) {
     if (amount.contains("five")) {
       ;(bar.children[0] as HTMLElement).style.width = "100%"
       ;(bar.children[0] as HTMLElement).style.animation = "five 3s"
+    } else if (amount.contains("four_five")) {
+      ;(bar.children[0] as HTMLElement).style.width = "90%"
+      ;(bar.children[0] as HTMLElement).style.animation = "four_five 3s"
     } else if (amount.contains("four")) {
       ;(bar.children[0] as HTMLElement).style.width = "80%"
       ;(bar.children[0] as HTMLElement).style.animation = "four 3s"
+    } else if (amount.contains("three_five")) {
+      ;(bar.children[0] as HTMLElement).style.width = "70%"
+      ;(bar.children[0] as HTMLElement).style.animation = "three_five 3s"
     } else if (amount.contains("three")) {
       ;(bar.children[0] as HTMLElement).style.width = "60%"
       ;(bar.children[0] as HTMLElement).style.animation = "three 3s"
+    } else if (amount.contains("two_five")) {
+      ;(bar.children[0] as HTMLElement).style.width = "50%"
+      ;(bar.children[0] as HTMLElement).style.animation = "two_five 3s"
     } else if (amount.contains("two")) {
       ;(bar.children[0] as HTMLElement).style.width = "40%"
       ;(bar.children[0] as HTMLElement).style.animation = "two 3s"
+    } else if (amount.contains("one_five")) {
+      ;(bar.children[0] as HTMLElement).style.width = "30%"
+      ;(bar.children[0] as HTMLElement).style.animation = "one_five 3s"
     } else if (amount.contains("one")) {
       ;(bar.children[0] as HTMLElement).style.width = "20%"
       ;(bar.children[0] as HTMLElement).style.animation = "one 3s"

@@ -38,18 +38,6 @@ const Languages = () => {
           <div className="skills__data">
             <i className="bx bxs-badge-check"></i>
             <div>
-              <h3 className="skills__name">React.js</h3>
-              <span className="bar">
-                <span className="four">
-                </span>
-              </span>
-            </div>
-                <h3 className="level">4/5</h3>
-          </div>
-
-          <div className="skills__data">
-            <i className="bx bxs-badge-check"></i>
-            <div>
               <h3 className="skills__name">SQL</h3>
               <span className="bar">
                 <span className="four">
@@ -62,13 +50,26 @@ const Languages = () => {
           <div className="skills__data">
             <i className="bx bxs-badge-check"></i>
             <div>
-              <h3 className="skills__name">CSS/HTML</h3>
+              <h3 className="skills__name">React.js</h3>
               <span className="bar">
-                <span className="four">
+                <span className="three_five">
                 </span>
               </span>
             </div>
-                <h3 className="level">4/5</h3>
+                <h3 className="level">3.5/5</h3>
+          </div>
+
+
+          <div className="skills__data">
+            <i className="bx bxs-badge-check"></i>
+            <div>
+              <h3 className="skills__name">CSS/HTML</h3>
+              <span className="bar">
+                <span className="three_five">
+                </span>
+              </span>
+            </div>
+                <h3 className="level">3.5/5</h3>
           </div>
 
           <div className="skills__data">
