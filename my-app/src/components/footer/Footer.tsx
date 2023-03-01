@@ -33,7 +33,7 @@ const Footer = () => {
             &#169; Tawatchai Holmes.
           </span>
         </div>
-        <span className="edited__copy">Last edited On {month} {year}.</span>
+        <span className="edited__copy">Last edited on {month} {year}.</span>
       </div>
     </footer>
   )
