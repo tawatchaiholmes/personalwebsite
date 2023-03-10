@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import React, { useState } from "react"
+import "./Navbar.css"
 
 const Navbar = () => {
   // Toggle Menu
@@ -13,24 +13,27 @@ const Navbar = () => {
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
-            <a href="#home" className="nav__link">
-              <i className="uil uil-estate nav__icon"></i> Home
-            </a>
+            
+            <li>
+              <a href="#home" className="home active">
+                <i className="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
 
-            <li className="nav__item">
-              <a href="#about" className="nav__link">
+            <li>
+              <a href="#about" className="about">
                 <i className="uil uil-user nav__icon"></i> About
               </a>
             </li>
 
-            <li className="nav__item">
-              <a href="#skills" className="nav__link">
+            <li>
+              <a href="#skills" className="skills">
                 <i className="uil uil-file-alt nav__icon"></i> Skills
               </a>
             </li>
 
-            <li className="nav__item">
-              <a href="#contact" className="nav__link">
+            <li>
+              <a href="#contact" className="contact">
                 <i className="uil uil-message nav__icon"></i> Contact
               </a>
             </li>

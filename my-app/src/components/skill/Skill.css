@@ -1,9 +1,11 @@
+.skill-background-color{
+    background-color: var(--secondary-dark-mode);
+}
 .bar {
-    backgound: #353b48;
     display: block;
     height: 10px;
     width: 180px;
-    border: 1px solid #A27B5C;
+    border: 1px solid var(--primary-light-mode);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -13,7 +15,7 @@
 .bar span {
     height: 10px;
     float: left;
-    background: #2C3639;
+    background: var(--primary-accent-color);
 }
 
 @keyframes five {
@@ -114,20 +116,20 @@
 }
 
 .skills__content {
-    border: 5px solid rgba(0, 0, 0, 0.1);
+    border: 5px solid rgba(204, 85, 0, 0.1);
     padding: 2rem 3.4rem;
     border-radius: 1.25rem;
-    background-color: #DCD7C9;
+    background-color: #2C3333;
 }
 
 .skill__titlemain {
     font-size: 50px;
-    color: #333333;
+    color: var(--primary-light-mode);
     text-align: center;
 }
 
 .skills__title {
-    color: #333333;
+    color: var(--primary-light-mode);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -151,14 +153,14 @@
 }
 
 .skills__name {
-    color: #333333;
+    color: var(--primary-light-mode);
     font-size: 14px;
     line-height: 18px;
     padding-bottom: 0.4rem;
 }
 
 .level {
-    color: #333333;
+    color: var(--primary-light-mode);
     font-size: 14px;
     line-height: 18px;
     display: flex;

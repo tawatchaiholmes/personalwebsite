@@ -1,15 +1,20 @@
 .footer {
-    background-color: #dcd7c9;
+    background-color: var(--primary-dark-mode);
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
 }
 
-.footer__logo   {
-    color: white !important;;
-    font-weight: var(--font-semi-bold);
-    font-size: 36px;
+
+.footer__logo {
+    position: relative;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .footer__logo span {
-    color: #A27B5C;
+    color: #CC5500;
     font-weight: var(--font-semi-bold);
 }
 
@@ -20,12 +25,12 @@
 }
 
 .footer__container {
-    padding: 2rem 0 5rem;
+    padding: 2rem 0 2rem;
 }
 
 .footer__copy {
     display: block;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     text-align: center;
 }
 

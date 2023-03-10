@@ -1,3 +1,7 @@
+.about-background-color {
+    background-color: #2C3333;
+}
+
 .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -6,7 +10,7 @@
 
 .about__img {
     width: 450px;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     justify-self: center;
 }
 .about__description {
@@ -16,7 +20,7 @@
 
 .about__title {
     font-size: 50px;
-    color: white;
+    color: var(--primary-light-mode);
     text-align: center;
 }
 

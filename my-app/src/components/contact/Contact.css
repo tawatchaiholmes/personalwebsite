@@ -1,3 +1,7 @@
+.contact-background-color {
+  background-color: var(--primary-dark-mode);
+}
+
 .contact__container {
   justify-content: center;
   padding-bottom: 3rem;
@@ -25,12 +29,12 @@
 
 .contact__social-icon {
   font-size: 2rem;
-  color: whitesmoke;
+  color: var(--primary-light-mode);
   transition: .3s;
 }
 
 .contact__social-icon:hover {
-  color: #A27B5C;
+  color: #CC5500;
 }
 
 .contact__info {
@@ -43,6 +47,15 @@
 .email__card {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+
+.email:link {
+  color: var(--text-color);
+} 
+
+.email:hover {
+  color: var(--primary-accent-color);
+  transition: 0.3s;
 }
 
 .number__card {
@@ -65,20 +78,14 @@
 .contact__title {
   font-size: 50px;
   font-weight: bold;
-  color: white;
+  color: var(--primary-light-mode);
   text-align: center;
 }
 
 .contact__card-title {
   font-size: var(--small-font-size);
   font-weight: bold;
-  color: white;
-}
-
-.click {
-  font-size: 1.2rem;
-  vertical-align: middle;
-  color:  #A27B5C;
+  color: var(--primary-light-mode);
 }
 
 .contact__card-number {
@@ -86,13 +93,13 @@
   transition: 0.3s;
 }
 .contact__card-number:hover {
-  color:  #A27B5C;
+  color:  #CC5500;
   cursor: pointer;
 }
 
 .contact__subtitle {
   font-size: 20px;
-  color: white;
+  color: var(--primary-light-mode);
 }
 
 .contact__form {
@@ -113,7 +120,7 @@
   height: 100%;
   border: 2px solid rgba(0, 0, 0, 0.3);
   background: none;
-  color: #dcd7c9;
+  color: var(--primary-light-mode);
   outline: none;
   border-radius: 0.75rem;
   padding: 1rem;
@@ -122,7 +129,7 @@
 }
 
 .contact__form-input:focus {
-  border-color: #DCD7C9;
+  border-color: var(--primary-light-mode);
 }
 
 
@@ -132,9 +139,9 @@
   left: 1.25rem;
   font-size: var(--small-font-size);
   padding: 0.25rem;
-  background-color: #2c3639;
+  background-color: var(--primary-dark-mode);
   z-index: 10;
-  color: #a27b5c;
+  color: #CC5500;
 }
 
 .contact__form-area {

@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer__copy">
-            &#169; Tawatchai Holmes.
+            &#169; Copyright Tawatchai Holmes 2023
           </span>
         </div>
         <span className="edited__copy">Last edited on {month} {year}.</span>

@@ -1,12 +1,12 @@
-import React from "react";
-import "./App.css";
-import Navbar from "./components/header/Navbar";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Skill from "./components/skill/Skill";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import React from "react"
+import "./App.css"
+import Navbar from "./components/header/Navbar"
+import Home from "./components/home/Home"
+import About from "./components/about/About"
+import Skill from "./components/skill/Skill"
+import Contact from "./components/contact/Contact"
+import Footer from "./components/footer/Footer"
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader"
 
 const observer = new IntersectionObserver(
   (entries: IntersectionObserverEntry[]) => {
@@ -64,34 +64,35 @@ window.onload = () => {
     } else {
       console.log("skills not found")
     }
-    
+
     let name = document.getElementById("name") as HTMLInputElement
     let email = document.getElementById("email") as HTMLInputElement
     let message = document.getElementById("message") as HTMLInputElement
-    let submitButton = document.getElementById("sendButton") as HTMLButtonElement
-    
+    let submitButton = document.getElementById(
+      "sendButton"
+    ) as HTMLButtonElement
+
     let isName = false
     let isEmail = false
     let isMessage = false
-    
-    
-    if  (submitButton)  {
-      clearInterval(interval) 
+
+    if (submitButton) {
+      clearInterval(interval)
     } else {
     }
-  
+
     name.addEventListener("input", () => {
       isName = checkName(name.value)
       checkButton(submitButton, isName, isEmail, isMessage)
     })
 
     email.addEventListener("input", () => {
-      isEmail= checkEmail(email.value)
+      isEmail = checkEmail(email.value)
       checkButton(submitButton, isName, isEmail, isMessage)
     })
 
     message.addEventListener("input", () => {
-      isMessage= checkMessage(message.value)
+      isMessage = checkMessage(message.value)
       checkButton(submitButton, isName, isEmail, isMessage)
     })
 
@@ -99,61 +100,85 @@ window.onload = () => {
       submitButton.classList.add("disabled")
     })
 
+    const sectionAll = document.querySelectorAll<HTMLElement>("section[id]");
+    const navLi = document.querySelectorAll<HTMLElement>("nav .nav__menu ul li");
 
+    window.addEventListener("scroll", () => {
+      let current: string | null = null;
+      sectionAll.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop - sectionHeight) {
+          current = section.getAttribute("id");
+        }
+        console.log(current);
+      });
+    
+      navLi.forEach((li) => {
+        if (li.children[0].classList.contains("active")) {
+          li.children[0].classList.remove("active");
+        }
+        if (current !== null && li.children[0].classList.contains(current)) {
+          li.children[0].classList.add("active");
+        }
+      });
+    });
+    
+    
   }, 3000)
 }
 
-const checkButton = (submitButton: any, isName: boolean, isEmail: boolean, isMessage: boolean) => {
-
+const checkButton = (
+  submitButton: any,
+  isName: boolean,
+  isEmail: boolean,
+  isMessage: boolean
+) => {
   if (isName && isEmail && isMessage) {
     submitButton.classList.remove("disabled")
   } else {
     submitButton.classList.add("disabled")
   }
-
 }
 
 const checkName = (name: any) => {
-
   let error = document.getElementById("nameError") as HTMLParagraphElement
 
   if (name.length === 0) {
     error.classList.add("hidden")
-    return false;
-  } else if ((name.match(/^[A-Za-z]+$/)) || (name.includes(" "))) {
+    return false
+  } else if (name.match(/^[A-Za-z]+$/) || name.includes(" ")) {
     error.classList.add("hidden")
-    return true;
+    return true
   } else {
     error.classList.remove("hidden")
-    return false;
+    return false
   }
 }
 
 const checkEmail = (email: any) => {
-
   let error = document.getElementById("emailError") as HTMLParagraphElement
-  const expression: RegExp = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-  
+  const expression: RegExp = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+
   if (email.length === 0) {
     error.classList.add("hidden")
-    return false;
+    return false
   } else if (expression.test(email)) {
     error.classList.add("hidden")
-    return true; 
+    return true
   } else {
     error.classList.remove("hidden")
-    return false;
+    return false
   }
 }
 
 const checkMessage = (message: any) => {
   if (message.length === 0) {
-    return false;
+    return false
   } else {
-    return true;
+    return true
   }
 }
-
 
 const override: React.CSSProperties = {
   display: "block",
@@ -163,7 +188,7 @@ const override: React.CSSProperties = {
   left: "50%",
   position: "absolute",
   transform: "translate(-50%, -50%)",
-  backgroundColor: "#2C3639",
+  backgroundColor: "var(--primary-dark-mode)",
 }
 
 const App = () => {
@@ -179,7 +204,7 @@ const App = () => {
     <>
       {loading ? (
         <ClimbingBoxLoader
-          color={"#A27B5C"}
+          color={"var(--primary-accent-color"}
           loading={loading}
           cssOverride={override}
           size={15}
@@ -189,13 +214,12 @@ const App = () => {
           <Navbar />
           <main className="main">
             <Home />
-            <div className="spacer layer1"></div>
+            <div className="spacer split-1"></div>
             <About />
-            <div className="spacer layer2"></div>
+            <div className="spacer split-2"></div>
             <Skill />
-            <div className="spacer layer3"></div>
+            <div className="spacer split-3"></div>
             <Contact />
-            <div className="spacer layer4"></div>
             <Footer />
           </main>
         </>

@@ -19,7 +19,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="contact__section" id="contact">
+    <section className="contact__section contact-background-color" id="contact">
       <h2 className="contact__title"> Get in touch </h2>
       <span className="section__subtitle"> Contact me </span>
 
@@ -37,7 +37,7 @@ const Contact = () => {
 
             <div className="email__card">
               <h3 className="contact__card-title">Email:</h3>
-              <span>andy.holmes7662@gmail.com</span>
+              <a className="email"href="mailto:andy.holmes7662@gmail.com">andy.holmes7662@gmail.com</a>
             </div>
             <div className="number__card">
               <h3 className="contact__card-title">WhatsApp:</h3>
@@ -48,9 +48,6 @@ const Contact = () => {
               >
                 +64 27-619-4098
               </a>
-              <span className="click">
-                <i className="bx bx-left-arrow-alt"></i>
-              </span>
             </div>
           </div>
 
