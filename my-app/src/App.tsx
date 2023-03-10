@@ -6,6 +6,7 @@ import About from "./components/about/About"
 import Skill from "./components/skill/Skill"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
+import Scrollup from "components/scroll/Scrollup"
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader"
 
 const observer = new IntersectionObserver(
@@ -100,31 +101,29 @@ window.onload = () => {
       submitButton.classList.add("disabled")
     })
 
-    const sectionAll = document.querySelectorAll<HTMLElement>("section[id]");
-    const navLi = document.querySelectorAll<HTMLElement>("nav .nav__menu ul li");
+    const sectionAll = document.querySelectorAll<HTMLElement>("section[id]")
+    const navLi = document.querySelectorAll<HTMLElement>("nav .nav__menu ul li")
 
     window.addEventListener("scroll", () => {
-      let current: string | null = null;
-      sectionAll.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
+      let current: string | null = null
+      sectionAll.forEach(section => {
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.offsetHeight
         if (window.scrollY >= sectionTop - sectionHeight) {
-          current = section.getAttribute("id");
+          current = section.getAttribute("id")
         }
-        console.log(current);
-      });
-    
-      navLi.forEach((li) => {
+        console.log(current)
+      })
+
+      navLi.forEach(li => {
         if (li.children[0].classList.contains("active")) {
-          li.children[0].classList.remove("active");
+          li.children[0].classList.remove("active")
         }
         if (current !== null && li.children[0].classList.contains(current)) {
-          li.children[0].classList.add("active");
+          li.children[0].classList.add("active")
         }
-      });
-    });
-    
-    
+      })
+    })
   }, 3000)
 }
 
@@ -220,8 +219,9 @@ const App = () => {
             <Skill />
             <div className="spacer split-3"></div>
             <Contact />
-            <Footer />
           </main>
+          <Footer />
+          <Scrollup />
         </>
       )}
     </>
