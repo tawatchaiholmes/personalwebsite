@@ -16,11 +16,11 @@ const Languages = () => {
             <div>
               <h3 className="skills__name">Python</h3>
               <span className="bar">
-                <span className="five">
+                <span className="four">
                 </span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+              <h3 className="level">4/5</h3>
           </div>
 
           <div className="skills__data">

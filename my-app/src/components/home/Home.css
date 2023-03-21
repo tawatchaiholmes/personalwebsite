@@ -206,6 +206,26 @@
         box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
     }
 
+    .home__img.one {
+        display: none;
+    }
+
+    .home__img.two {
+        display: none;
+    }
+
+    .home__img.three {
+        display: none;
+    }
+
+    .home__img.four {
+        display: none;
+    }
+
+    .home__img.five {
+        display: none;
+    }
+
     .home__scroll{
         margin-left: 7.5rem;
     }
