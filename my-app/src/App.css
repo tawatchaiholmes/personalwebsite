@@ -105,22 +105,27 @@ img {
 
 .home__section {
   padding: 16rem 0 10rem;
+  background-color: var(--secondary-dark-mode);
 }
 
 .about__section {
   padding: 6rem 0 12rem;
+  background-color: var(--primary-dark-mode);
 }
 
 .skills__section {
   padding: 4rem 0 12rem;
+  background-color: var(--secondary-dark-mode);
 }
 
 .project__section {
   padding: 10rem 0 30rem;
+  background-color: var(--primary-dark-mode);
 }
 
 .contact__section {
   padding: 1rem 0 1rem;
+  background-color: var(--secondary-dark-mode);
 }
 
 
@@ -245,23 +250,28 @@ img {
   }
 
   .home__section {
-    padding: 12rem 0 16rem;
+    padding: 12rem 0 18rem;
+    background-color: var(--secondary-dark-mode);
   }
 
   .about__section {
     padding: 12rem 0 16rem;
+    background-color: var(--primary-dark-mode);
   }
 
   .skills__section {
     padding: 10rem 0 10rem;
+    background-color: var(--secondary-dark-mode);
   }
 
   .project__section {
     padding: 20rem 0 20rem;
+    background-color: var(--primary-dark-mode);
   }
 
   .contact__section {
     padding: 6rem 0 6rem;
+    background-color: var(--secondary-dark-mode);
   }
 
   .button {

@@ -4,6 +4,7 @@ import Me from "../../assets/me2.jpg"
 import CV from "../../assets/Tawatchai-Holmes-CV.pdf"
 import Aos from "aos"
 import "aos/dist/aos.css"
+import Info from "./Info"
 
 document.addEventListener("mousemove", function (x: MouseEvent) {
   const img = document.querySelector(".about__img") as HTMLImageElement
@@ -31,6 +32,7 @@ const About = () => {
       <div data-aos="zoom-in" className="about__container container grid">
         <img src={Me} alt="" className="about__img" data-value="-3" />
         <div className="about__data">
+          <Info />
           <p className="about__description">
             As a Computer Science major, I possess a blend of skills in Software
             Engineering, Mathematics, Statistics, and Data Science. I am highly
