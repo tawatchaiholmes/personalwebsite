@@ -104,10 +104,10 @@ const Tools = () => {
             <div>
               <h3 className="skills__name">Pandas</h3>
               <span className="bar">
-                <span className="five"></span>
+                <span className="four"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+              <h3 className="level">4/5</h3>
           </div>
 
           <div className="skills__data">
@@ -115,10 +115,10 @@ const Tools = () => {
             <div>
               <h3 className="skills__name">Numpy</h3>
               <span className="bar">
-                <span className="five"></span>
+                <span className="four"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+              <h3 className="level">4/5</h3>
           </div>
         </div>
       </div>
