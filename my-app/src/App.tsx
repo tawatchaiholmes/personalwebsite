@@ -6,6 +6,7 @@ import About from "./components/about/About"
 import Skill from "./components/skill/Skill"
 import Contact from "./components/contact/Contact"
 import Footer from "./components/footer/Footer"
+import Projects from "components/projects/Projects"
 import Scrollup from "components/scroll/Scrollup"
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader"
 
@@ -218,6 +219,8 @@ const App = () => {
             <div className="spacer split-2"></div>
             <Skill />
             <div className="spacer split-3"></div>
+            <Projects />
+            <div className="spacer split-4"></div>
             <Contact />
           </main>
           <Footer />

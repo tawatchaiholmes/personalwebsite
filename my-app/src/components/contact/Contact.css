@@ -1,5 +1,5 @@
 .contact-background-color {
-  background-color: var(--primary-dark-mode);
+  background-color: var(--secondary-dark-mode);
 }
 
 .contact__container {
@@ -139,7 +139,7 @@
   left: 1.25rem;
   font-size: var(--small-font-size);
   padding: 0.25rem;
-  background-color: var(--primary-dark-mode);
+  background-color: var(--secondary-dark-mode);
   z-index: 10;
   color: #CC5500;
 }

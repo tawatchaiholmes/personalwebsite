@@ -1,0 +1,10 @@
+.project-background-color {
+    background-color: var(--primary-dark-mode);
+  }
+
+.project__title {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primary-light-mode);
+    text-align: center;
+}

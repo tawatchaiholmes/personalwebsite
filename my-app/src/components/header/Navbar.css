@@ -41,6 +41,7 @@
 .contact,
 .skills,
 .about,
+.project,
 .home {
     display: flex;
     flex-direction: column;
@@ -65,6 +66,7 @@ nav .nav__menu ul li.active {
 .contact:hover,
 .skills:hover,
 .about:hover,
+.project:hover,
 .home:hover {
     color: var(--primary-accent-color);
 }
@@ -72,6 +74,7 @@ nav .nav__menu ul li.active {
 .contact.active,
 .skills.active,
 .about.active,
+.project.active,
 .home.active {
     color: var(--primary-accent-color);
 }

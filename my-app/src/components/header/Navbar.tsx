@@ -33,6 +33,12 @@ const Navbar = () => {
             </li>
 
             <li>
+              <a href="#project" className="project">
+                <i className="uil uil-file-alt nav__icon"></i> Projects
+              </a>
+            </li>
+
+            <li>
               <a href="#contact" className="contact">
                 <i className="uil uil-message nav__icon"></i> Contact
               </a>
