@@ -11,11 +11,11 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
-  --primary-dark-mode: #2C3333;
-  --secondary-dark-mode: #2E4F4F;
-  --primary-light-mode: #CBE4DE;
-  --main-text-color: #0E8388;
-  --primary-accent-color: #CC5500;
+  --primary-dark-mode: #2c3333;
+  --secondary-dark-mode: #2e4f4f;
+  --primary-light-mode: #cbe4de;
+  --main-text-color: #0e8388;
+  --primary-accent-color: #cc5500;
 
   /* Body font */
   --body-font: "Poppins", sans-serif;
@@ -102,7 +102,6 @@ img {
   height: auto !important;
 }
 
-
 .home__section {
   padding: 16rem 0 10rem;
   background-color: var(--secondary-dark-mode);
@@ -127,7 +126,6 @@ img {
   padding: 1rem 0 1rem;
   background-color: var(--secondary-dark-mode);
 }
-
 
 .section__title {
   font-size: 40px;
@@ -224,7 +222,6 @@ img {
 .split-4 {
   background-image: url(../src/assets/split4dark.svg);
 }
-
 
 /* Breakpoint */
 

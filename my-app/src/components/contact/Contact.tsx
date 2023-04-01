@@ -1,8 +1,22 @@
 import React from "react"
-import emailjs, { EmailJSResponseStatus } from "@emailjs/browser"
+import emailjs from "@emailjs/browser"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import "./Contact.css"
 
 const Contact = () => {
+  const notify = () =>
+    toast.success("Message sent", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    })
+
   const form = React.useRef<HTMLFormElement>(null)
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -30,14 +44,16 @@ const Contact = () => {
           <div className="contact__info">
             <div className="contact__card">
               <span className="contact__text">
-                I would love to chat! You can reach me via my personal email, WhatsApp or
-                fill out the form below!
+                I would love to chat! You can reach me via my personal email,
+                WhatsApp or fill out the form below!
               </span>
             </div>
 
             <div className="email__card">
               <h3 className="contact__card-title">Email:</h3>
-              <a className="email"href="mailto:andy.holmes7662@gmail.com">andy.holmes7662@gmail.com</a>
+              <a className="email" href="mailto:andy.holmes7662@gmail.com">
+                andy.holmes7662@gmail.com
+              </a>
             </div>
             <div className="number__card">
               <h3 className="contact__card-title">WhatsApp:</h3>
@@ -113,6 +129,7 @@ const Contact = () => {
                     type="submit"
                     value="Send"
                     className="button button--flex disabled"
+                    onClick={notify}
                   >
                     Send Message
                     <svg
@@ -127,6 +144,18 @@ const Contact = () => {
                       <path d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"></path>
                     </svg>
                   </button>
+                  <ToastContainer
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover={false}
+                    theme="dark"
+                  />
                 </div>
                 <div>
                   <div className="contact__icon">

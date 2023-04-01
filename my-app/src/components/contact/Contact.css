@@ -30,11 +30,11 @@
 .contact__social-icon {
   font-size: 2rem;
   color: var(--primary-light-mode);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .contact__social-icon:hover {
-  color: #CC5500;
+  color: #cc5500;
 }
 
 .contact__info {
@@ -51,7 +51,7 @@
 
 .email:link {
   color: var(--text-color);
-} 
+}
 
 .email:hover {
   color: var(--primary-accent-color);
@@ -93,7 +93,7 @@
   transition: 0.3s;
 }
 .contact__card-number:hover {
-  color:  #CC5500;
+  color: #cc5500;
   cursor: pointer;
 }
 
@@ -132,7 +132,6 @@
   border-color: var(--primary-light-mode);
 }
 
-
 .contact__form-tag {
   position: absolute;
   top: -0.75rem;
@@ -141,7 +140,7 @@
   padding: 0.25rem;
   background-color: var(--secondary-dark-mode);
   z-index: 10;
-  color: #CC5500;
+  color: #cc5500;
 }
 
 .contact__form-area {
@@ -153,35 +152,34 @@
 }
 
 @media screen and (max-width: 992px) {
-    .contact__container {
-       column-gap: 3rem;
-    }
+  .contact__container {
+    column-gap: 3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .contact__container {
-        grid-template-columns: 1fr;
-        row-gap: 3rem;
-    }
+  .contact__container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
 
-    .contact__info {
-        justify-content: left;
-    }
+  .contact__info {
+    justify-content: left;
+  }
 
-    .contact__form {
-        margin: 0 auto;
-    }
-    
+  .contact__form {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .contact__info {
-        grid-template-columns: 1fr;
-    }
+  .contact__info {
+    grid-template-columns: 1fr;
+  }
 
-    .contact__form {
-        width: 100%;
-    }
+  .contact__form {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 350px) {
