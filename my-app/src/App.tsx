@@ -1,14 +1,14 @@
-import React from "react"
-import "./App.css"
-import Navbar from "./components/header/Navbar"
-import Home from "./components/home/Home"
-import About from "./components/about/About"
-import Skill from "./components/skill/Skill"
-import Contact from "./components/contact/Contact"
-import Footer from "./components/footer/Footer"
 import Projects from "components/projects/Projects"
 import Scrollup from "components/scroll/Scrollup"
+import React from "react"
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader"
+import "./App.css"
+import About from "./components/about/About"
+import Contact from "./components/contact/Contact"
+import Footer from "./components/footer/Footer"
+import Navbar from "./components/header/Navbar"
+import Home from "./components/home/Home"
+import Skill from "./components/skill/Skill"
 
 const observer = new IntersectionObserver(
   (entries: IntersectionObserverEntry[]) => {
@@ -113,7 +113,6 @@ window.onload = () => {
         if (window.scrollY >= sectionTop - sectionHeight) {
           current = section.getAttribute("id")
         }
-        console.log(current)
       })
 
       navLi.forEach(li => {
@@ -207,10 +206,10 @@ const App = () => {
           color={"var(--primary-accent-color"}
           loading={loading}
           cssOverride={override}
-          size={15}
+          size={20}
         />
       ) : (
-        <>
+        <div className="webpage-container">
           <Navbar />
           <main className="main">
             <Home />
@@ -225,7 +224,7 @@ const App = () => {
           </main>
           <Footer />
           <Scrollup />
-        </>
+        </div>
       )}
     </>
   )

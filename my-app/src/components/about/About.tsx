@@ -1,9 +1,9 @@
-import React from "react"
-import "./About.css"
-import Me from "../../assets/me2.jpg"
-import CV from "../../assets/Tawatchai-Holmes-CV.pdf"
 import Aos from "aos"
 import "aos/dist/aos.css"
+import React from "react"
+import CV from "../../assets/Tawatchai-Holmes-CV.pdf"
+import Me from "../../assets/me2.jpg"
+import "./About.css"
 import Info from "./Info"
 
 document.addEventListener("mousemove", function (x: MouseEvent) {
@@ -22,14 +22,22 @@ const About = () => {
   }, [])
   return (
     <section className="about__section about-background-color" id="about">
-      <h2 data-aos="zoom-in" className="about__title">
+      <h2 data-aos="zoom-in" data-aos-once="true" className="about__title">
         About Me
       </h2>
-      <span data-aos="zoom-in" className="section__subtitle">
+      <span
+        data-aos="zoom-in"
+        data-aos-once="true"
+        className="section__subtitle"
+      >
         My Introduction
       </span>
 
-      <div data-aos="zoom-in" className="about__container container grid">
+      <div
+        data-aos="zoom-in"
+        data-aos-once="true"
+        className="about__container container grid"
+      >
         <img src={Me} alt="" className="about__img" data-value="-3" />
         <div className="about__data">
           <Info />
