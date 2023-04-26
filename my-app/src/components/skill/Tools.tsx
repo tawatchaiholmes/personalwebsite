@@ -1,13 +1,13 @@
-import React from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import Aos from "aos"
+import "aos/dist/aos.css"
+import React from "react"
 
 const Tools = () => {
   React.useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 3000 })
   }, [])
   return (
-    <div data-aos="fade-up" className="skills__content">
+    <div data-aos="fade-up" data-aos-once="true" className="skills__content">
       <h3 className="skills__title">Tools</h3>
       <div className="skills__box">
         <div className="skills__group">
@@ -19,7 +19,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -30,7 +30,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -41,7 +41,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -52,7 +52,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -63,7 +63,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -74,7 +74,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -85,7 +85,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -96,7 +96,7 @@ const Tools = () => {
                 <span className="five"></span>
               </span>
             </div>
-              <h3 className="level">5/5</h3>
+            <h3 className="level">5/5</h3>
           </div>
 
           <div className="skills__data">
@@ -107,7 +107,7 @@ const Tools = () => {
                 <span className="four"></span>
               </span>
             </div>
-              <h3 className="level">4/5</h3>
+            <h3 className="level">4/5</h3>
           </div>
 
           <div className="skills__data">
@@ -118,7 +118,7 @@ const Tools = () => {
                 <span className="four"></span>
               </span>
             </div>
-              <h3 className="level">4/5</h3>
+            <h3 className="level">4/5</h3>
           </div>
         </div>
       </div>
