@@ -1,5 +1,5 @@
-import React from "react"
 import emailjs from "@emailjs/browser"
+import React from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import "./Contact.css"
@@ -61,6 +61,7 @@ const Contact = () => {
                 href="https://api.whatsapp.com/send?phone=64276194098"
                 className="contact__card-number"
                 target="_blank"
+                rel="noreferrer"
               >
                 +64 27-619-4098
               </a>
@@ -160,17 +161,19 @@ const Contact = () => {
                 <div>
                   <div className="contact__icon">
                     <a
-                      href="https://github.com/andyholmes1210"
+                      href="https://github.com/tawatchaiholmes"
                       className="contact__social-icon"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="uil uil-github"></i>
                     </a>
 
                     <a
-                      href="https://www.linkedin.com/in/tawatchai-holmes-56395a250/"
+                      href="https://www.linkedin.com/in/tawatchaiholmes/"
                       className="contact__social-icon"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="uil uil-linkedin"></i>
                     </a>
