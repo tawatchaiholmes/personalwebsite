@@ -3,7 +3,7 @@ Portfolio website built in React
 
 This was a website built to showcase my technical skills and web design skills.
 
-https://www.tholmes.nz/
+[tawatchaiholmes](https://www.tawatchaiholmes.com/)
 
 ## Technologies Used
 - HTML/CSS
