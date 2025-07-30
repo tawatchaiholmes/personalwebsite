@@ -51,8 +51,8 @@ const Contact = () => {
 
             <div className="email__card">
               <h3 className="contact__card-title">Email:</h3>
-              <a className="email" href="mailto:andy.holmes7662@gmail.com">
-                andy.holmes7662@gmail.com
+              <a className="email" href="mailto:tawatchaiholmes@gmail.com">
+                tawatchaiholmes@gmail.com
               </a>
             </div>
             <div className="number__card">
